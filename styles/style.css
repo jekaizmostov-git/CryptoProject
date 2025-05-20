@@ -2,13 +2,16 @@ body{
 	font-family: Arial, sans-serif;
 	margin: 0;
 	padding: 20px;
-	background-color: #f5f5f5;
+	background-image: url("../imgs/fon.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
 }
+
 
 .container{
 	max-width: 800px;
 	margin: 0 auto;
-	background-color: white;
+	background-color: rgba(11,12,39,1);
 	padding: 20px;
 	border-radius: 8px;
 	box-shadow: 0 2p  4px rgba(0,0,0,0.1);
@@ -16,9 +19,8 @@ body{
 
 h1{
 	text-align: center;
-	color: #333;
+	color: white;
 }
-
 .controls{
 	display:flex;
 	justify-content: center;
@@ -33,14 +35,50 @@ select, button{
 }
 
 button{
-	background-color: #007bff;
+	border: none;
+	background-color: #0056B3;
 	color: white;
 	cursor: pointer;
+	font-weight: 600;
 }
 
 button:hover{
-	background-color: #0056B3;
+	background-color: #0339CD;
 }
+
+select{
+	background-color: rgb(11,12,39);
+	color: white;
+	border: 1px solid white;
+	cursor: pointer;
+}
+
+select:hover{
+	border: 1px solid #000000;
+}
+
+.input_amount{
+	outline: none;
+	background: none;
+	box-shadow: none;
+	appearance: none;
+	border: 1px solid white;
+	color: white;
+	border-radius: 4px;
+	text-align: right;
+	padding-right: 5px;
+}
+
+/*.input_amount::-webkit-outer-spin-button,
+.input_amount::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.input_amount{
+  -moz-appearance: textfield;
+}
+*/
 
 #crypto-list{
 	display: grid;
@@ -51,7 +89,8 @@ button:hover{
 	display: flex;
 	justify-content: space-between;
 	padding: 10px;
-	background-color: #f9f9f9;
+	background-color: #1C1E58;
+	color: white;
 	border-radius: 4px;
 }
 

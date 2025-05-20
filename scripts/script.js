@@ -2,6 +2,7 @@
 const cryptoList = document.getElementById('crypto-list')
 const currencySelect = document.getElementById('currency-select')
 const refreshBtn = document.getElementById('refresh-btn')
+const amountOfMoney = document.querySelector('.input_amount')
 
 //main function for load data from CoinGecko
 async function fetchCryptoData(currency = "usd"){
@@ -24,7 +25,7 @@ function displayCryptoData(data){
 		cryptoItem.classList = 'crypto-item'
 		cryptoItem.innerHTML = `
 			<span>${crypto.name} (${crypto.symbol.toUpperCase()})</span>
-			<span>>${crypto.current_price} ${currencySelect.value.toUpperCase()}</span>
+			<span>>${(amountOfMoney.value * crypto.current_price)} ${currencySelect.value.toUpperCase()}</span>
 		`;
 		cryptoList.appendChild(cryptoItem)
 	});
@@ -42,5 +43,5 @@ updateData()
 
 currencySelect.addEventListener('click', updateData)
 refreshBtn.addEventListener('click', updateData)
-
-fetchCryptoData().then(data => console.log(data))
+amountOfMoney.addEventListener('input', updateData)
+console.log(amountOfMoney.value)
