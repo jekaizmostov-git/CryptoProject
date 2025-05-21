@@ -69,7 +69,7 @@ select:hover{
 	padding-right: 5px;
 }
 
-/*.input_amount::-webkit-outer-spin-button,
+.input_amount::-webkit-outer-spin-button,
 .input_amount::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
@@ -78,7 +78,7 @@ select:hover{
 .input_amount{
   -moz-appearance: textfield;
 }
-*/
+
 
 #crypto-list{
 	display: grid;
