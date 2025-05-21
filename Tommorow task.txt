@@ -1,10 +1,10 @@
-change style on smart Crypto design (ready)
-add currency converter (ready)
+change style on smart Crypto design (READY)
+add currency converter (READY)
 
-add currency BYN (need to get actual course of BYN)
+add currency BYN (need to get actual course of BYN) (READY)
 
-learn fetch api
-learn coin CoinGecko API
+learn fetch api (READY)
+learn coin CoinGecko API (READY)
 
 
 
